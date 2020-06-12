@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link href="mystyles.css" rel="stylesheet" type="text/css" /> <!--this is a link to the css file -->
-  <link rel="stylesheet" type="text/css" href="mystylesnav.css">
-	<script src="font.js"></script>
+  <link href="css/mystyles.css" rel="stylesheet" type="text/css" />
+  <!--this is a link to the css file -->
+  <link rel="stylesheet" type="text/css" href="css/mystylesnav.css">
+  <script src="js/font.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Portfolio</title>
-</head>
-<body>
-  <header>
-      <div class="menu-toggler">
-        <div class="bar half start"></div>
-        <div class="bar"></div>
-        <div class="bar half end"></div>
 
-      </div>
-      <nav class="top-nav"> <!--these are hyperlinks for each headind in the navigation bar navigating around the website-->
-        <ul class="nav-list">
-              <li>
-                  <a href="#index.html" class="nav-link">Home</a>
-              </li>
-              <li>
-                <a href="#about.html" class="nav-link">About</a>
+ 
+</head>
+
+<body>
+  <div class="container">
+     
+    <header>
+  
+      <div class= "toparea"> <!--these are hyperlinks for each headind in the navigation bar navigating around the website-->
+          <ul class="topnav">
+            <li>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#portfolio.html" class="nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact.html" class="nav-link">Contact</a>
-        </li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+             <a href="contact.html">Contact</a>
+            </li>
 
-        </ul>
-      </nav> 
+          </ul>
+        </div>
+  
+        <div class ="thead">
+          <img src="images/Portfolio_title.png" alt="title"></a> <!--this is the code for the image of the website name inserted in the
+          div tag at the top of each page -->
+        </div>
+
+    </header>
+
+      
+
+      
+
       <div class="landing-text">
-          <h1>Nadia Rashid</h1>
-          <h6>Front-End Web Developer</h6>
+        <h4><font color = "#009933">Hi,</h4></font></h4>
+
+        <h1><font color = "#009933">I am Nadia Rashid</h1>
+        <h3>My passion is to develop my expertise in the world of Web Development!</font></h3>
 
       </div>
-      
-      
-  </header>
 
-  <section class="about" id="about">
+      <div class="portfolio-pic">
+        <img src="images/black_dress.JPG" alt=""
+        class="responsive">
+        </portfolio-img>
+      </div>
+
+      <div class="socialnav">
+	      <a href="https://www.linkedin.com/home"><img src="images/linkedin.png" alt="social"></a> <!--hyperlink to Facebook -->
+	      <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="social"></a> <!--hyperlink to Twitter-->
+	      <a href="https://plus.google.com/u/3/109426102474623656311"><img src="images/google-plus-icon.png" alt="social"></a> <!--hyperlink to Google+ -->
+      </div>
+
+      <div class="home-info">
+        <h3><font color = "#8B0000">My name is Nadia Rashid and I have recently graduated in BSc Computing. My interests are particulaly <br>
+          in web development. I have gained qualifications in web application, web design and front end web development <br>
+          and many other computing subjects. I have gained skills in designing and developing websites and my aim is <br>
+          bring creativity into the websites where it becomes the center of focus.</font></h3>
+      </div>
+   
+      <footer>
+       
+        <div class="copyright">
+          <p>Copyright 2020-© Nadia Rashid</p>
+      </div>
+
+    </footer>
+
+    </div>  
+
+ <!-- <section class="about" id="about">
     <div class="container">
       <div class="profile-img">
         <img src="images/profile.jpeg" alt="">
@@ -60,20 +102,20 @@
       <div class="social-media">
         <ul class="nav-list">
           <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa facebook-square"></i>
-              </a>
+            <a href="#" class="icon-link">
+              <i class="fab fa facebook-square"></i>
+            </a>
           </li>
           <li>
             <a href="#" class="icon-link">
               <i class="fab fa twitter-square"></i>
             </a>
-        </li>
-        <li>
-          <a href="#" class="icon-link">
-            <i class="fab fa instagram-square"></i>
-          </a>
-      </li>
+          </li>
+          <li>
+            <a href="#" class="icon-link">
+              <i class="fab fa instagram-square"></i>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -83,82 +125,104 @@
 
   <section class="portfolio" id="portfolio">
     <div class="container">
-        <div class="section-heading">
-          <h1>Portfolio</h1>
-          <h6>View some of my recent work</h6>
-          
-        </div>
+      <div class="section-heading">
+        <h1>Portfolio</h1>
+        <h6>View some of my recent work</h6>
 
-        <div class="portfolio-item">
-          <div class="portfolio-description">
-            <h6>Web Development</h6>
-            <h1>Clothes Website</h1>
-            <p>
-              jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
-  
-            </p>
-            <a href="" class="cta">View Details</a>
-      
-          </div>
-          <div class="portfolio-img">
-            <img src="images/clothes-website.jpeg" alt="">
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>Clothes Website</h1>
+          <p>
+            jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
+
+          </p>
+          <a href="" class="cta">View Details</a>
+
+        </div>
+        <div class="portfolio-img">
+          <img src="images/clothes-website.jpeg" alt="">
           </portfolio-img>
         </div>
 
-        
-    </div>
 
-    <div class="portfolio-item">
-      <div class="portfolio-img">
-        <img src="images/web-design.jpg" alt="">
-      </portfolio-img>
-    </div>
+      </div>
 
-    <div class="portfolio-description">
-      <h6>Web Design</h6>
-      <h1>Product Layout</h1>
-      <p>
-        jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
-
-      </p>
-      <a href="" class="cta">View Details</a>
-
-    </div>
-</div>
-
-<div class="portfolio-item">
-  <div class="portfolio-img">
-    <img src="images/frontend-and-backend-development.jpg" alt="">
-  </portfolio-img>
-</div>
-
-<div class="portfolio-description">
-  <h6>Back End Web Development</h6>
-  <h1>User Credentials</h1>
-  <p>
-    jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
-
-  </p>
-  <a href="" class="cta">View Details</a>
-
-</div>
-</div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container">
-        <div class="section-heading">
-          <h1>About</h1>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="images/web-design.jpg" alt="">
+          </portfolio-img>
         </div>
 
-    </div>
+        <div class="portfolio-description">
+          <h6>Web Design</h6>
+          <h1>Product Layout</h1>
+          <p>
+            jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
+
+          </p>
+          <a href="" class="cta">View Details</a>
+
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="images/frontend-and-backend-development.jpg" alt="">
+          </portfolio-img>
+        </div>
+
+        <div class="portfolio-description">
+          <h6>Web Application</h6>
+          <h1>Back-End Web Development</h1>
+          <p>
+            jf;lsdk;f;lsdkf;lsgs';akgl;sjg;lksafls;d;a';d's'sd;kfkkdjflgkhgkkdjgjdhgjdhgjhgjdfhgjfd
+
+          </p>
+          <a href="" class="cta">View Details</a>
+
+        </div>
+      </div>
   </section>
 
-  
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Contact</h1>
+        <h6>Contact to have a chat</h6>
+      </div>
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="subject">subject:</label>
+        <textarea name="subject" id="subject" cols="15" rows="10"></textarea>
+        <input type="submit" value="Submit">
+
+        
+
+      </form>
+
+    </div>
+
+    <footer class="copyright"></footer>
+    <div class="up" id="up"></div>
+    <i class="fas fa-chevron-up"></i>
+    <p>&copy; 2020 Nadia Rashid</p>
+
+  </section>-->
 
 
 
-  
-  
+
+
+
+
 </body>
+
 </html>
+
+
